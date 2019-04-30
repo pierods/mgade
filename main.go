@@ -32,12 +32,12 @@ func main() {
 		consoleReader := bufio.NewScanner(os.Stdin)
 		consoleReader.Scan()
 		inFile = consoleReader.Text()
-
 	case 2:
 		inFile = os.Args[1]
-		fmt.Println("Using encrypted file " + inFile)
+		fmt.Println("Reading encrypted file " + inFile)
 	case 3:
 		inFile = os.Args[1]
+		fmt.Println("Reading encrypted file " + inFile)
 		outFile = os.Args[2]
 		fmt.Println("Writing to clear file " + outFile)
 	}
